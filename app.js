@@ -72,6 +72,11 @@ function renderTableHead() {
 
 function renderTableBody() {
 
+    if (flower.all == null) {
+        flower.all = [];
+        flower.all = JSON.parse(localStorage.getItem('myFlower'));
+    }
+    
     const tbody = document.createElement('tbody');
     for (let i = 0; i < flower.all.length; i++) {
         const trE = document.createElement('tr');
@@ -127,7 +132,7 @@ function removeFlower(event) {
     renderTableBody();
 }
 
-
+flower.all = [];
 flower.all = JSON.parse(localStorage.getItem('myFlower'));
 
 renderTableHead();
