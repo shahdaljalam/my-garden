@@ -4,11 +4,6 @@ const form = document.getElementById('myForm');
 const clearTable = document.getElementById('clear');
 const tablePlace = document.getElementById('mytable');
 
-flower.all = []
-flower.all = JSON.parse(localStorage.getItem('myFlower'));
-
-renderTableHead();
-renderTableBody();
 
 function flower(name, image, season) {
     this.name = name;
@@ -131,3 +126,9 @@ function removeFlower(event) {
     renderTableHead();
     renderTableBody();
 }
+
+
+flower.all = JSON.parse(localStorage.getItem('myFlower'));
+
+renderTableHead();
+renderTableBody();
