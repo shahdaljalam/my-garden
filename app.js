@@ -88,7 +88,7 @@ function renderTableBody() {
         col1.appendChild(remove);
 
         var img = document.createElement("img");
-        img.src = "/images/" + flower.all[i].image + ".jpeg";
+        img.src = "images/" + flower.all[i].image + ".jpeg";
         col2.appendChild(img);
 
         col3.textContent = flower.all[i].name;
