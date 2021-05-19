@@ -1,4 +1,3 @@
-
 'use strict';
 
 const form = document.getElementById('myForm');
@@ -41,8 +40,8 @@ form.addEventListener('submit', function (event) {
 clearTable.addEventListener('click', clearList);
 function clearList(event) {
     event.preventDefault();
-    flower.all= [];
-    
+    flower.all = [];
+
     localStorage.setItem('myFlower', JSON.stringify(flower.all));
 
     while (tablePlace.hasChildNodes()) {
