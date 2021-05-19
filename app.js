@@ -5,6 +5,12 @@ const form = document.getElementById('myForm');
 const clearTable = document.getElementById('clear');
 const tablePlace = document.getElementById('mytable');
 
+flower.all = []
+flower.all = JSON.parse(localStorage.getItem('myFlower'));
+
+renderTableHead();
+renderTableBody();
+
 function flower(name, image, season) {
     this.name = name;
     this.image = image;
@@ -12,8 +18,6 @@ function flower(name, image, season) {
 
     flower.all.push(this);
 }
-
-flower.all = JSON.parse(localStorage.getItem('myFlower'));
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -71,9 +75,6 @@ function renderTableHead() {
     thead.appendChild(trE);
     tablePlace.appendChild(thead);
 }
-
-renderTableHead();
-renderTableBody();
 
 function renderTableBody() {
 
