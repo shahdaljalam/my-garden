@@ -30,6 +30,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+img{
+	width: 70px;
+	height: 70px;
+}
+
 body {
 	line-height: 1;
 }
@@ -46,5 +51,68 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 1;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.bodySection{
+	padding: 118px;
+	display: grid;
+	grid-template-columns:1fr 1fr ;
+	align-items: center;
+}
+.myH1{
+	padding-bottom: 30px;;
+	padding-top: 30px;;
+
+	height: 70px;
+	text-align:center;
+	font-size: 5ex;
+
+	color: white;
+	background-color: #107dac;
+}
+
+.save {
+	background-color: #71c7ec;
+}
+
+.clear{
+	background-color: #a10909;
+	margin: 10px;
+
+}
+label{
+	width: 300px;;
+}
+
+select{
+	width: 300px;;
+}
+input{
+	width: 300px;;
+}
+button
+{
+color: white;
+width: 70px;
+height: 30px;
+
+}
+.tableHead{
+	margin-bottom: 3px;
+	padding-bottom: 10px;
+}
+tr:nth-child(odd) {
+	background: #107dac ;
+	margin: 10 px;
+}
+tr:nth-child(even) 
+{
+	background: #189ad3;
+}
+.removeButton{
+	background-color: transparent;
+	color: black;
+	border: 0px;
 }
